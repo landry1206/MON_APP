@@ -1,9 +1,9 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser')
-const userRoutes = require('./routes/user.routes');
-const postRoutes = require('./routes/post.routes');
-const expoRoutes = require('./routes/expo.routes.js')
+const userRoutes = require('./Routes/user.routes');
+const postRoutes = require('./Routes/post.routes');
+const expoRoutes = require('./Routes/expo.routes.js')
 const {checkUser} = require ('./Midlewares/auth.middleware');
 const { requireAuth } = require("./Midlewares/auth.middleware");
 const dotenv = require("dotenv")
